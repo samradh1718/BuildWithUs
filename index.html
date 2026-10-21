@@ -3,496 +3,987 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BuildWithUs | Zero to Launch Engineering Studio</title>
-  <meta name="description" content="BuildWithUs — We build custom websites and software for startups and early-stage businesses. Partner directly with senior engineers Samradh Dubey & Prashanjeet Chakrabarty.">
+  <title>Build With Us — Zero to Launch Engineering Studio</title>
+  <meta name="description" content="Build With Us turns your ideas into reliable, scalable, and high-quality digital solutions. Direct engineering partnership with senior engineers Samradh Dubey & Prashanjeet Chakrabarty.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="home">
-    <a href="#home" class="logo">
-      <div class="logo-mark">B</div>
-      <span>BuildWithUs</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link active">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#services" class="nav-link">Services</a></li>
-      <li><a href="#portfolio" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <span class="location-time" id="current-time">--:-- AM</span>
-      <a href="#contact" class="nav-cta">Get Started</a>
+  <!-- ========================================================
+       TOP NAVIGATION BAR
+       ======================================================== -->
+  <nav class="site-nav" id="topNav">
+    <div class="container-wide nav-inner">
+      <a href="#home" class="nav-brand">
+        <div class="nav-brand-mark">B</div>
+        <span>Build With Us</span>
+        <span class="nav-brand-sub">Engineering Studio</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+        <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+        <li class="nav-item"><a href="#standards" class="nav-link">Standards</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-contact-pill">
+          <span>Book a Strategy Call</span>
+          <span class="arrow-circle-btn light" style="width:24px;height:24px;font-size:0.8rem;">↗</span>
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home-section">
-    <!-- Background layers -->
-    <div class="hero-bg-image"></div>
-    <div class="hero-bg-gradient"></div>
-    <div class="hero-bg-glow"></div>
-    <div class="hero-watermark">BuildWithUs</div>
-
-    <div class="hero-inner">
-      <div class="hero-left">
-
-        <h1 class="hero-title">Making Your<br>World a Zero-to-<br>Launch Experience</h1>
-
-        <div class="hero-service-pills">
-          <span class="h-pill">Web Development</span>
-          <span class="h-pill">AI Engineering</span>
-          <span class="h-pill">MVP Launch</span>
-          <span class="h-pill">Mobile Apps</span>
-        </div>
-
-        <div class="hero-cta-row">
-          <a href="#contact" class="btn-primary">Start a Project <span class="btn-icon">↗</span></a>
-          <a href="#portfolio" class="btn-ghost">View our Works</a>
+  <!-- ========================================================
+       HERO SECTION (Sage & Deep Ink Bento Aesthetic)
+       ======================================================== -->
+  <header class="hero-section" id="home">
+    <div class="container hero-box">
+      <!-- Top Row: Welcome / Studio Badge + 4 Capability Icons -->
+      <div class="hero-top-row">
+        <div class="pill-badge">ZERO-TO-LAUNCH ENGINEERING</div>
+        <div class="hero-icon-pill-group" title="Web · Mobile · SaaS · Automations">
+          <!-- Globe / Web -->
+          <span class="icon-item" title="Web Development">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </span>
+          <!-- Mobile / App -->
+          <span class="icon-item" title="Mobile App Development">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </span>
+          <!-- Layers / SaaS -->
+          <span class="icon-item" title="SaaS Platforms">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </span>
+          <!-- Lightning / Automation -->
+          <span class="icon-item" title="Business Automation & AI">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </span>
         </div>
       </div>
 
-      <div class="hero-right">
-        <!-- Founders Card -->
-        <div class="avail-card">
-          <div class="avail-card-body">
-            <div class="avail-card-top-row">
-              <div class="avail-logo-icon">BW</div>
-              <div class="avail-card-info">
-                <p class="avail-names">Samradh Dubey &amp; Prashanjeet Chakrabarty</p>
-                <a href="mailto:samradh1718@gmail.com" class="avail-email">samradh1718@gmail.com</a>
+      <!-- Main Typography Statement -->
+      <h1 class="hero-main-title">
+        Build With Us turns your ideas into reliable, scalable, and high-quality digital solutions. <span class="lead-muted">With clear communication and transparency at every step.</span>
+      </h1>
+
+      <!-- Bottom Row: Founders direct access card + Action buttons -->
+      <div class="hero-bottom-row">
+        <!-- Studio Focus Card -->
+        <div class="hero-proposal-card">
+          <div class="proposal-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="proposal-text">
+            <strong>Senior Engineering Studio</strong>
+            <span>Direct partner-level execution</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-action">
+          <a href="#works" class="btn-get-to-know">
+            <span>Explore Our Works</span>
+          </a>
+          <a href="#contact" class="arrow-circle-btn" aria-label="Start a project">↗</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       STUDIO CAPABILITIES OVERVIEW (Bento Grid)
+       ======================================================== -->
+  <section class="agenda-section" id="overview">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#about" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">STUDIO OVERVIEW</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">Engineered for startup velocity</h2>
+
+      <div class="agenda-bento-grid">
+        <!-- 01 Who We Are -->
+        <a href="#about" class="agenda-card dark">
+          <div class="agenda-card-num">01</div>
+          <div class="agenda-card-bottom">
+            <h3>Who We Are</h3>
+            <p>Direct founder access · Senior full-stack engineers</p>
+          </div>
+        </a>
+
+        <!-- 02 Capabilities -->
+        <a href="#services" class="agenda-card pale">
+          <div class="agenda-card-num">02</div>
+          <div class="agenda-card-bottom">
+            <h3>Capabilities</h3>
+            <p>Web · Mobile apps · SaaS platforms · AI automations</p>
+          </div>
+        </a>
+
+        <!-- 03 Engineering Process -->
+        <a href="#process" class="agenda-card sage">
+          <div class="agenda-card-num">03</div>
+          <div class="agenda-card-bottom">
+            <h3>How We Work</h3>
+            <p>Six-stage agile process · Concept to deployment</p>
+          </div>
+        </a>
+
+        <!-- 04 Commitments -->
+        <a href="#standards" class="agenda-card pale">
+          <div class="agenda-card-num">04</div>
+          <div class="agenda-card-bottom">
+            <h3>Standards</h3>
+            <p>Full IP ownership · Clean architecture · Guaranteed timelines</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ABOUT US (Ideas Into Reliable Digital Solutions)
+       ======================================================== -->
+  <section class="about-bento-section" id="about">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#services" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">ABOUT US</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">Ideas into reliable digital solutions</h2>
+
+      <div class="about-bento-grid">
+        <!-- OUR GOAL (Dark Card) -->
+        <div class="bento-goal-card">
+          <span class="goal-tag">OUR MISSION</span>
+          <p class="goal-headline">To turn your ideas into reliable, scalable, and high-quality digital solutions.</p>
+        </div>
+
+        <!-- Communication Card (Pale Sage) -->
+        <div class="bento-comm-card">
+          <span class="comm-icon">💬</span>
+          <p class="comm-text">Clear communication, transparency, and professional standards throughout the engineering lifecycle.</p>
+        </div>
+
+        <!-- 3 Metrics Bento Cards -->
+        <div class="about-metrics-row">
+          <!-- Metric 1: 4 core services -->
+          <div class="metric-card pale">
+            <div class="metric-top">
+              <span class="metric-number">4</span>
+              <span class="metric-label">core services</span>
+            </div>
+            <div class="metric-bottom">
+              <p class="metric-desc">Web, app, SaaS &amp; automation</p>
+              <span class="metric-icon-small">≚</span>
+            </div>
+          </div>
+
+          <!-- Metric 2: 6 step process -->
+          <div class="metric-card pale">
+            <div class="metric-top">
+              <span class="metric-number">6</span>
+              <span class="metric-label">stage process</span>
+            </div>
+            <div class="metric-bottom">
+              <p class="metric-desc">From first architecture to handover</p>
+              <span class="metric-icon-small">⇄</span>
+            </div>
+          </div>
+
+          <!-- Metric 3: 100% Code Ownership -->
+          <div class="metric-card dark">
+            <div class="metric-top">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">code ownership</span>
+            </div>
+            <div class="metric-bottom">
+              <p class="metric-desc">Full IP transfer and zero vendor lock-in</p>
+              <span class="metric-icon-small">🛡️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founders & Team Direct Access Banner -->
+      <div class="founders-banner">
+        <div class="founders-info">
+          <div class="founders-avatar-group">
+            <div class="avatar-badge" title="Samradh Dubey">SD</div>
+            <div class="avatar-badge" title="Prashanjeet Chakrabarty">PC</div>
+          </div>
+          <div class="founders-names">
+            <strong>Samradh Dubey &amp; Prashanjeet Chakrabarty</strong>
+            <span>Senior software engineers leading technical architecture and implementation directly with founders.</span>
+          </div>
+        </div>
+        <a href="mailto:workbuildwithus@gmail.com?subject=Talk%20with%20Founders%20-%20Build%20With%20Us" class="founders-contact-link">
+          <span>Talk with Founders</span>
+          <span class="arrow-circle-btn" style="width:26px;height:26px;font-size:0.85rem;">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SERVICES (Four Ways We Can Help)
+       ======================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#works" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">OUR SERVICES</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">Four ways we can help</h2>
+      <p class="section-subhead">Every solution is architected according to your technical roadmap, user volume, and product objectives.</p>
+
+      <div class="services-bento-grid">
+        <!-- 1: Web Development (Dark Card) -->
+        <div class="service-bento-card dark">
+          <div>
+            <div class="service-card-header">
+              <div class="service-card-icon">🌐</div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="service-card-body">
+              <p>Business websites, landing pages, custom web apps, e-commerce, responsive designs, and agreed maintenance.</p>
+            </div>
+          </div>
+          <div class="service-tech-pills">
+            <span class="tech-tag">React / Next.js</span>
+            <span class="tech-tag">Full-Stack Apps</span>
+            <span class="tech-tag">Sub-Second Loads</span>
+            <span class="tech-tag">Technical SEO</span>
+          </div>
+        </div>
+
+        <!-- 2: App Development (Pale Sage Card) -->
+        <div class="service-bento-card pale">
+          <div>
+            <div class="service-card-header">
+              <div class="service-card-icon">📱</div>
+              <h3>App Development</h3>
+            </div>
+            <div class="service-card-body">
+              <p>Custom Android and iOS apps where agreed, business apps, API integrations, testing, and deployment where included.</p>
+            </div>
+          </div>
+          <div class="service-tech-pills">
+            <span class="tech-tag">React Native / Expo</span>
+            <span class="tech-tag">iOS &amp; Android</span>
+            <span class="tech-tag">Offline Sync</span>
+            <span class="tech-tag">Store Publishing</span>
+          </div>
+        </div>
+
+        <!-- 3: SaaS Development (Medium Sage Card) -->
+        <div class="service-bento-card sage">
+          <div>
+            <div class="service-card-header">
+              <div class="service-card-icon">≚</div>
+              <h3>SaaS Development</h3>
+            </div>
+            <div class="service-card-body">
+              <p>Custom SaaS platforms with subscriptions, authentication, roles, dashboards, analytics, databases, and payments.</p>
+            </div>
+          </div>
+          <div class="service-tech-pills">
+            <span class="tech-tag">Multi-Tenancy</span>
+            <span class="tech-tag">Payment Gateways</span>
+            <span class="tech-tag">Role-Based Auth</span>
+            <span class="tech-tag">Live Analytics</span>
+          </div>
+        </div>
+
+        <!-- 4: Business Automations (Pale Sage Card) -->
+        <div class="service-bento-card pale">
+          <div>
+            <div class="service-card-header">
+              <div class="service-card-icon">⚡</div>
+              <h3>Business Automations</h3>
+            </div>
+            <div class="service-card-body">
+              <p>Workflow and repetitive-task automation, API integrations, AI-powered workflows, reporting, and notifications.</p>
+            </div>
+          </div>
+          <div class="service-tech-pills">
+            <span class="tech-tag">AI Agents &amp; LLMs</span>
+            <span class="tech-tag">API Integrations</span>
+            <span class="tech-tag">Automated Pipelines</span>
+            <span class="tech-tag">Webhook Triggers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SELECTED WORKS / PORTFOLIO (Live Engineering Proof)
+       ======================================================== -->
+  <section class="portfolio-bento-section" id="works">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#process" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">SELECTED WORKS</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · PROVEN CASE STUDIES</span>
+      </div>
+
+      <h2 class="section-title">Production systems built from zero</h2>
+      <p class="section-subhead">Explore recent platforms, client products, and custom AI systems delivered by our engineers.</p>
+
+      <div class="portfolio-grid">
+        <!-- Project 1: RecoverAI -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">FinTech &amp; AI Engine</span>
+              <a href="https://github.com/samradh1718/Recover-AI-Razorpay-" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="View Source on GitHub">↗</a>
+            </div>
+            <div class="p-header">
+              <div class="p-symbol">R</div>
+              <div class="p-title-group">
+                <h3>RecoverAI</h3>
+                <span>AI Payment Recovery Engine</span>
               </div>
             </div>
+            <p class="p-desc">Production payment recovery backend using FastAPI, Redis, and Celery with deterministic policy gates and ML scoring.</p>
+            <ul class="p-highlights">
+              <li>Asynchronous recovery workflows with Razorpay Test Mode webhooks</li>
+              <li>Calibrated CatBoost scoring &amp; expected-net-value action ranking</li>
+              <li>Append-only audit trail and live React/TypeScript metrics dashboard</li>
+            </ul>
+          </div>
+          <div class="p-footer">
+            <span class="p-tech-chip">FastAPI</span>
+            <span class="p-tech-chip">Redis</span>
+            <span class="p-tech-chip">Celery</span>
+            <span class="p-tech-chip">CatBoost</span>
+            <span class="p-tech-chip">Razorpay</span>
           </div>
         </div>
-      </div>
-    </div>
 
-
-  </section>
-
-  <!-- ABOUT / EXPERIENCE -->
-  <section class="about-section" id="about">
-    <div class="about-inner">
-      <div class="about-left">
-        <p class="section-eyebrow">• Experiences</p>
-        <h2 class="about-headline">
-          We build software that makes your vision real.
-          <span class="about-headline-light"> From raw concepts to scalable, high-converting platforms for startups.</span>
-        </h2>
-
-        <!-- Team -->
-        <div class="team-exp-list">
-          <div class="exp-item">
-            <div class="exp-company">Founder &amp; Lead Engineer</div>
-            <div class="exp-role">Samradh Dubey</div>
-            <div class="exp-year">2024 – Present</div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-company">Co-Founder &amp; Engineer</div>
-            <div class="exp-role">Prashanjeet Chakrabarty</div>
-            <div class="exp-year">2025 – Present</div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="about-right">
-        <div class="about-description-block">
-          <p class="about-desc-bold">We help businesses elevate their value through custom</p>
-          <p class="about-desc-light">software development, product design, and engineering services — helping startups launch and scale without the agency overhead.</p>
-        </div>
-
-        <div class="about-social-row">
-          <p class="explore-label">Explore our social</p>
-          <div class="social-row-links">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="s-pill s-orange">X</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="s-pill">IN</a>
-            <a href="https://github.com/samradh1718" target="_blank" rel="noopener noreferrer" class="s-pill">GH</a>
-            <a href="#contact" class="about-us-btn">About Us →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- We Build Together row -->
-    <div class="wbt-row">
-      <div class="wbt-pill wbt-light">We</div>
-      <div class="wbt-pill wbt-orange">Build</div>
-      <div class="wbt-pill wbt-dark">→</div>
-      <div class="wbt-pill wbt-light wbt-blur">Together</div>
-    </div>
-  </section>
-
-
-
-  <!-- SERVICES -->
-  <section class="services-section" id="services">
-    <div class="section-header-center">
-      <p class="section-eyebrow">• What We Deliver</p>
-      <h2 class="section-heading">Our Services</h2>
-      <p class="section-subheading">We partner with founders and early-stage businesses to ship high-performance software from zero to launch.</p>
-    </div>
-
-    <div class="services-grid">
-      <div class="svc-card">
-        <span class="svc-tag">0-to-1 Engineering</span>
-        <h3 class="svc-title">MVP Development for Startups</h3>
-        <p class="svc-desc">Raw concept to production-grade MVP in fast agile sprints. From database design to deployment, lean and tested software ready for user onboarding and investor pitching.</p>
-        <div class="svc-pills">
-          <span>Fast Execution</span>
-          <span>Scalable Architecture</span>
-          <span>Iterative Sprints</span>
-        </div>
-      </div>
-      <div class="svc-card">
-        <span class="svc-tag">Web Platforms</span>
-        <h3 class="svc-title">Custom Web & SaaS Applications</h3>
-        <p class="svc-desc">Conversion-focused websites and complex full-stack web applications. React, Next.js, clean CSS for sub-second page loads, SEO, and seamless UX.</p>
-        <div class="svc-pills">
-          <span>React / Next.js</span>
-          <span>TypeScript</span>
-          <span>Custom Dashboards</span>
-        </div>
-      </div>
-      <div class="svc-card">
-        <span class="svc-tag">Applied AI & ML</span>
-        <h3 class="svc-title">AI Integration & Intelligent Engines</h3>
-        <p class="svc-desc">Proprietary ML pipelines integrated into your workflows. Local LLMs (Llama 3), computer vision (OpenCV/PyTorch), speech models (Whisper), and scoring engines.</p>
-        <div class="svc-pills">
-          <span>Local LLMs</span>
-          <span>Computer Vision</span>
-          <span>Speech AI</span>
-        </div>
-      </div>
-      <div class="svc-card">
-        <span class="svc-tag">High Concurrency</span>
-        <h3 class="svc-title">Backend Architecture & APIs</h3>
-        <p class="svc-desc">Resilient backends for zero downtime and real-time operations. High-throughput REST & WebSocket APIs, Redis caching, payment webhooks, and enterprise authorization.</p>
-        <div class="svc-pills">
-          <span>FastAPI & Spring Boot</span>
-          <span>PostgreSQL & Redis</span>
-          <span>Payment Integrations</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="portfolio-section" id="portfolio">
-    <div class="section-header-center light-section-header">
-      <p class="section-eyebrow">• Selected Projects & Client Works</p>
-      <h2 class="section-heading">Explore Our Works</h2>
-      <p class="section-subheading">Real-world AI systems, client platforms, and high-performance applications built from zero.</p>
-    </div>
-
-    <div class="portfolio-grid">
-
-      <!-- Project 1: RecoverAI -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">FinTech & AI Engine</span>
-          <div class="pcard-action">
-            <span class="pcard-date">Aug 2026</span>
-            <a href="https://github.com/samradh1718/Recover-AI-Razorpay-" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="View on GitHub">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">R</div>
-            <div>
-              <h3 class="pcard-name">RecoverAI</h3>
-              <p class="pcard-tagline">AI-Powered Payment Recovery Engine</p>
+        <!-- Project 2: KineSense -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">Edge AI &amp; CV</span>
+              <a href="https://github.com/samradh1718/KineSense" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="View Source on GitHub">↗</a>
             </div>
-          </div>
-          <p class="pcard-desc">Production-grade payment recovery backend with FastAPI, Redis, and Celery. Webhook verification, idempotent recovery actions, worker retries, and CatBoost ML scoring behind deterministic policy gates.</p>
-          <ul class="pcard-highlights">
-            <li>Asynchronous recovery workflows with Razorpay Test Mode webhooks</li>
-            <li>Calibrated CatBoost scoring & expected-net-value action ranking (APPROVE / MODIFY / REJECT / ESCALATE)</li>
-            <li>Append-only audit trails, state-version checks, and React/TypeScript dashboard</li>
-          </ul>
-        </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>CatBoost ML</span><span>Razorpay</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2: KineSense -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">Edge AI & Computer Vision</span>
-          <div class="pcard-action">
-            <span class="pcard-date">Edge AI</span>
-            <a href="https://github.com/samradh1718/KineSense" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="View on GitHub">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">K</div>
-            <div>
-              <h3 class="pcard-name">KineSense</h3>
-              <p class="pcard-tagline">Edge Biomechanical AI Engine</p>
+            <div class="p-header">
+              <div class="p-symbol">K</div>
+              <div class="p-title-group">
+                <h3>KineSense</h3>
+                <span>Edge Biomechanical AI</span>
+              </div>
             </div>
+            <p class="p-desc">Sub-50ms PyTorch and OpenCV computer vision pipeline for real-time 3D biomechanical tracking on edge hardware.</p>
+            <ul class="p-highlights">
+              <li>80% reduction in kinematic compute time via PCA dimensionality reduction</li>
+              <li>Applied PINNs &amp; SE(3) geometric 3D representation</li>
+              <li>4-bit quantized Llama 3 for local real-time edge anomaly correction</li>
+            </ul>
           </div>
-          <p class="pcard-desc">Sub-50ms PyTorch and OpenCV computer-vision pipeline for real-time 2D/3D biomechanical tracking and anomaly correction across live video streams, connected to a digital-twin interface.</p>
-          <ul class="pcard-highlights">
-            <li>80% reduction in kinematic computation time via PCA-based dimensionality reduction</li>
-            <li>Applied PINNs (Physics-Informed Neural Networks) & SE(3) geometric 3D representation</li>
-            <li>4-bit quantized Llama 3 for low-latency local inference on edge hardware</li>
-          </ul>
-        </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>PyTorch</span><span>OpenCV</span><span>FastAPI</span><span>Next.js</span><span>Llama 3</span><span>PINNs</span>
+          <div class="p-footer">
+            <span class="p-tech-chip">PyTorch</span>
+            <span class="p-tech-chip">OpenCV</span>
+            <span class="p-tech-chip">Llama 3</span>
+            <span class="p-tech-chip">Next.js</span>
+            <span class="p-tech-chip">PINNs</span>
           </div>
         </div>
-      </div>
 
-      <!-- Project 3: HouseOfJaslin -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">Client E-Commerce</span>
-          <div class="pcard-action">
-            <span class="pcard-date">Jun–Nov 2025</span>
-            <a href="https://houseofjaslin.com" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="Visit Site">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">H</div>
-            <div>
-              <h3 class="pcard-name">HouseOfJaslin</h3>
-              <p class="pcard-tagline">Freelance Client E-Commerce Platform</p>
+        <!-- Project 3: HouseOfJaslin -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">Client E-Commerce</span>
+              <a href="https://houseofjaslin.com" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="Visit Live Site">↗</a>
             </div>
-          </div>
-          <p class="pcard-desc">Fully responsive React-based e-commerce platform for a fashion apparel brand. End-to-end sole ownership: requirements, architecture, testing, and deployment with REST API-driven product flows.</p>
-          <ul class="pcard-highlights">
-            <li>End-to-end sole ownership: requirements gathering, architecture, testing, and deployment</li>
-            <li>Diagnosed and eliminated performance bottlenecks across desktop, tablet, and mobile</li>
-            <li>Dynamic reusable UI components with robust REST API-driven flows</li>
-          </ul>
-        </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>React</span><span>JavaScript</span><span>CSS3</span><span>REST APIs</span><span>UI/UX</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4: Its3lf -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">Mobile Engineering</span>
-          <div class="pcard-action">
-            <span class="pcard-date">2026 – Present</span>
-            <a href="https://its3lf.com" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="Visit Site">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">I</div>
-            <div>
-              <h3 class="pcard-name">Its3lf</h3>
-              <p class="pcard-tagline">Retail Self-Checkout Mobile Application</p>
+            <div class="p-header">
+              <div class="p-symbol">H</div>
+              <div class="p-title-group">
+                <h3>HouseOfJaslin</h3>
+                <span>Fashion Apparel E-Commerce</span>
+              </div>
             </div>
+            <p class="p-desc">Responsive React-based retail platform engineered with sub-second product page loads and REST API-driven checkout.</p>
+            <ul class="p-highlights">
+              <li>End-to-end sole ownership: requirements, architecture, testing, and launch</li>
+              <li>Zero performance bottlenecks across desktop, tablet, and mobile</li>
+              <li>Dynamic product catalogs with high-converting cart flow</li>
+            </ul>
           </div>
-          <p class="pcard-desc">Production-ready retail self-checkout mobile app with React Native and Java Spring Boot, bridging in-store customer workflows directly with backend microservices.</p>
-          <ul class="pcard-highlights">
-            <li>Customer-facing mobile self-checkout workflows in React Native & Expo</li>
-            <li>Enterprise-grade Java Spring Boot microservices deployed on Render</li>
-            <li>Real-time cart validation and seamless end-to-end API communication</li>
-          </ul>
-        </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>React Native</span><span>Java</span><span>Spring Boot</span><span>Expo</span><span>Render</span>
+          <div class="p-footer">
+            <span class="p-tech-chip">React</span>
+            <span class="p-tech-chip">JavaScript</span>
+            <span class="p-tech-chip">REST APIs</span>
+            <span class="p-tech-chip">Tailored CSS</span>
           </div>
         </div>
-      </div>
 
-      <!-- Project 5: Campus Marketplace -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">Enterprise Web Platform</span>
-          <div class="pcard-action">
-            <span class="pcard-date">Marketplace</span>
-            <a href="https://github.com/HimanshSRM/SRM-MARKETPLACE" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="View on GitHub">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">U</div>
-            <div>
-              <h3 class="pcard-name">Campus Marketplace</h3>
-              <p class="pcard-tagline">Full-Stack University Commerce & Negotiation Ecosystem</p>
+        <!-- Project 4: Its3lf -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">Mobile Engineering</span>
+              <a href="https://its3lf.com" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="Visit Live Platform">↗</a>
             </div>
-          </div>
-          <p class="pcard-desc">Enterprise-grade, role-based peer-to-peer campus marketplace with progressive .edu verification, real-time in-chat official bidding & auto item resolution, and student storefront creation.</p>
-          <ul class="pcard-highlights">
-            <li>Two-Vault Security: Firebase Auth + FastAPI strict authorization</li>
-            <li>Real-Time Chat Engine: buyer-seller messaging with binding 1-click official bids</li>
-            <li>God-Mode Moderation: live audit logs, in-chat admin warnings, strike system</li>
-          </ul>
-        </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>FastAPI</span><span>Firebase Auth</span><span>Firestore</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6: Aura -->
-      <div class="pcard">
-        <div class="pcard-top">
-          <span class="pcard-badge">Multimodal AI & Healthcare</span>
-          <div class="pcard-action">
-            <span class="pcard-date">PsychIT</span>
-            <a href="https://huggingface.co/Blackfyred/Aura-Speech-Emotion-Model" target="_blank" rel="noopener noreferrer" class="pcard-arrow" title="View on Hugging Face">↗</a>
-          </div>
-        </div>
-        <div class="pcard-body">
-          <div class="pcard-heading">
-            <div class="pcard-symbol">A</div>
-            <div>
-              <h3 class="pcard-name">Aura (PsychIT)</h3>
-              <p class="pcard-tagline">Tri-Modal Psychological State Estimation Pipeline</p>
+            <div class="p-header">
+              <div class="p-symbol">I</div>
+              <div class="p-title-group">
+                <h3>Its3lf</h3>
+                <span>Self-Checkout Mobile App</span>
+              </div>
             </div>
+            <p class="p-desc">Production-ready retail self-checkout mobile app built with React Native and Java Spring Boot microservices.</p>
+            <ul class="p-highlights">
+              <li>Customer-facing mobile self-checkout workflows in React Native &amp; Expo</li>
+              <li>Enterprise Java Spring Boot microservices deployed on high-availability cloud</li>
+              <li>Real-time cart validation and end-to-end payment integration</li>
+            </ul>
           </div>
-          <p class="pcard-desc">Local-first, privacy-preserving AI detecting hidden psychological distress. Fuses acoustic vocal tone, semantic transcription, and physiological telemetry to quantify emotional dissonance as a digital biomarker.</p>
-          <ul class="pcard-highlights">
-            <li>Fine-tuned Wav2Vec 2.0 model achieving 83.0% validation F1-score on speech emotion detection</li>
-            <li>Whisper + local Llama 3 (8B) thematic driver extraction and Google Fit API telemetry</li>
-            <li>Dissonance Engine comparing vocal acoustics vs. verbal semantics to flag suppressed distress</li>
-          </ul>
+          <div class="p-footer">
+            <span class="p-tech-chip">React Native</span>
+            <span class="p-tech-chip">Expo</span>
+            <span class="p-tech-chip">Java</span>
+            <span class="p-tech-chip">Spring Boot</span>
+          </div>
         </div>
-        <div class="pcard-footer">
-          <div class="pcard-tags">
-            <span>Python 3.10+</span><span>Wav2Vec 2.0</span><span>OpenAI Whisper</span><span>Llama 3 (8B)</span><span>Streamlit</span><span>Hugging Face</span>
+
+        <!-- Project 5: Campus Marketplace -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">Enterprise Platform</span>
+              <a href="https://github.com/HimanshSRM/SRM-MARKETPLACE" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="View Source on GitHub">↗</a>
+            </div>
+            <div class="p-header">
+              <div class="p-symbol">U</div>
+              <div class="p-title-group">
+                <h3>Campus Marketplace</h3>
+                <span>Peer-to-Peer Commerce Platform</span>
+              </div>
+            </div>
+            <p class="p-desc">Role-based peer-to-peer commerce ecosystem featuring university verification, in-chat binding bidding, and moderation.</p>
+            <ul class="p-highlights">
+              <li>Two-Vault Security: Firebase Auth coupled with FastAPI strict authorization</li>
+              <li>Real-Time Chat Engine with binding 1-click official bids &amp; item settlement</li>
+              <li>God-Mode Moderation: live audit logs, admin warnings, and dispute resolution</li>
+            </ul>
+          </div>
+          <div class="p-footer">
+            <span class="p-tech-chip">Next.js</span>
+            <span class="p-tech-chip">TypeScript</span>
+            <span class="p-tech-chip">FastAPI</span>
+            <span class="p-tech-chip">Firestore</span>
+          </div>
+        </div>
+
+        <!-- Project 6: Aura (PsychIT) -->
+        <div class="project-bento-card">
+          <div>
+            <div class="p-top-row">
+              <span class="p-category-pill">Multimodal AI</span>
+              <a href="https://huggingface.co/Blackfyred/Aura-Speech-Emotion-Model" target="_blank" rel="noopener noreferrer" class="arrow-circle-btn" title="View on Hugging Face">↗</a>
+            </div>
+            <div class="p-header">
+              <div class="p-symbol">A</div>
+              <div class="p-title-group">
+                <h3>Aura (PsychIT)</h3>
+                <span>Tri-Modal Emotional Estimation</span>
+              </div>
+            </div>
+            <p class="p-desc">Privacy-preserving local AI detecting psychological indicators by fusing acoustic vocal tone, semantics, and telemetry.</p>
+            <ul class="p-highlights">
+              <li>Fine-tuned Wav2Vec 2.0 achieving 83.0% validation F1-score on speech emotion</li>
+              <li>Whisper + local Llama 3 (8B) thematic driver extraction and biometric telemetry</li>
+              <li>Acoustic vs. semantic dissonance quantification engine</li>
+            </ul>
+          </div>
+          <div class="p-footer">
+            <span class="p-tech-chip">Python</span>
+            <span class="p-tech-chip">Wav2Vec 2.0</span>
+            <span class="p-tech-chip">Whisper</span>
+            <span class="p-tech-chip">Llama 3</span>
+            <span class="p-tech-chip">Hugging Face</span>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ========================================================
+       ENGINEERING PROCESS (Six Steps, Start to Finish)
+       ======================================================== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#standards" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">ENGINEERING PROCESS</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">Six steps, start to finish</h2>
+      <p class="section-subhead">A proven, transparent engineering workflow that guarantees rapid progress and zero surprises.</p>
+
+      <div class="process-bento-grid">
+        <!-- 01: Consultation -->
+        <div class="process-card pale">
+          <div class="process-card-top">
+            <div class="process-num">01</div>
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>One-to-One Consultation</h3>
+            <p>We discuss your requirements, technical goals, key features, and target launch timeline.</p>
+          </div>
+        </div>
+
+        <!-- 02: Scope & Architecture -->
+        <div class="process-card pale">
+          <div class="process-card-top">
+            <div class="process-num">02</div>
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>Scope &amp; Architecture</h3>
+            <p>We map out the system architecture, deliverables, sprint milestones, and infrastructure setup.</p>
+          </div>
+        </div>
+
+        <!-- 03: Milestone Sign-off (Dark Card Accent) -->
+        <div class="process-card dark">
+          <div class="process-card-top">
+            <div class="process-num">03</div>
+            <span class="arrow-circle-btn light">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>Contract &amp; Signature</h3>
+            <p>A formal agreement documenting all agreed deliverables and timeline is digitally signed before work begins.</p>
+          </div>
+        </div>
+
+        <!-- 04: Development & Updates (Medium Sage Card Accent) -->
+        <div class="process-card sage">
+          <div class="process-card-top">
+            <div class="process-num">04</div>
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>Development &amp; Updates</h3>
+            <p>Fast sprint execution following the agreed technical roadmap, with continuous staging previews and feedback.</p>
+          </div>
+        </div>
+
+        <!-- 05: Demo & Walkthrough -->
+        <div class="process-card pale">
+          <div class="process-card-top">
+            <div class="process-num">05</div>
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>Demo &amp; Walkthrough</h3>
+            <p>We demo the live build, test key user journeys with you, and walk through every agreed feature.</p>
+          </div>
+        </div>
+
+        <!-- 06: Production Handover -->
+        <div class="process-card pale">
+          <div class="process-card-top">
+            <div class="process-num">06</div>
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+          <div class="process-card-content">
+            <h3>Deployment &amp; Handover</h3>
+            <p>Live production launch, full repository transfer, deployment credentials, and post-launch documentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ENGINEERING COMMITMENTS & STANDARDS
+       ======================================================== -->
+  <section class="commitment-section" id="standards">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#contact" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">OUR COMMITMENT</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">What you can always expect</h2>
+
+      <div class="commitment-grid">
+        <!-- Main Anchor Card (Dark Card) -->
+        <div class="commit-card hero-anchor">
+          <h3 class="commit-anchor-title">
+            Clear.<br>
+            Transparent.<br>
+            Reliable.
+          </h3>
+        </div>
+
+        <!-- Commitment 1: Clear & professional communication -->
+        <div class="commit-card pale">
+          <div class="commit-icon">💬</div>
+          <h4>Clear and professional communication</h4>
+        </div>
+
+        <!-- Commitment 2: Scope clarity -->
+        <div class="commit-card sage">
+          <div class="commit-icon">👁️</div>
+          <h4>Transparent milestone commitments and defined scope</h4>
+        </div>
+
+        <!-- Commitment 3: Reliable development & testing -->
+        <div class="commit-card pale">
+          <div class="commit-icon">✔️</div>
+          <h4>Reliable engineering, clean code, and thorough testing</h4>
+        </div>
+
+        <!-- Commitment 4: Agreed delivery timelines -->
+        <div class="commit-card pale">
+          <div class="commit-icon">🕒</div>
+          <h4>Strictly honoured delivery timelines</h4>
+        </div>
+
+        <!-- Commitment 5: Demos & walkthroughs before handover -->
+        <div class="commit-card sage">
+          <div class="commit-icon">💻</div>
+          <h4>Live demos and walkthroughs before final release</h4>
+        </div>
+
+        <!-- Commitment 6: Solutions designed around your business needs -->
+        <div class="commit-card pale">
+          <div class="commit-icon">🏛️</div>
+          <h4>Architectures designed specifically around your business goals</h4>
+        </div>
+
+        <!-- Commitment 7: Professional handling of credentials -->
+        <div class="commit-card pale">
+          <div class="commit-icon">🔒</div>
+          <h4>Professional handling of code repositories and access credentials</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       NEXT STEPS
+       ======================================================== -->
+  <section class="next-steps-section" id="next-steps">
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#contact" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">NEXT STEPS</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
+
+      <h2 class="section-title">How we get started</h2>
+      <p class="section-subhead">Ready to build? The first step is scheduling a quick strategy consultation.</p>
+
+      <div class="steps-grid">
+        <!-- 01: Consultation -->
+        <div class="step-card pale">
+          <div class="step-card-num">01</div>
+          <div class="step-card-content">
+            <h3>Consultation</h3>
+            <p>Schedule a one-to-one strategy call with our engineering leads.</p>
+          </div>
+          <div class="step-card-footer">
+            <a href="#contact" class="arrow-circle-btn" aria-label="Contact for Consultation">↗</a>
+          </div>
+        </div>
+
+        <!-- 02: Requirements -->
+        <div class="step-card pale">
+          <div class="step-card-num">02</div>
+          <div class="step-card-content">
+            <h3>Requirements</h3>
+            <p>We review your product requirements, user workflows, and tech stack.</p>
+          </div>
+          <div class="step-card-footer">
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+        </div>
+
+        <!-- 03: Architecture & Plan -->
+        <div class="step-card pale">
+          <div class="step-card-num">03</div>
+          <div class="step-card-content">
+            <h3>Architecture &amp; Plan</h3>
+            <p>We define the technical blueprint, sprint timeline, and deliverables.</p>
+          </div>
+          <div class="step-card-footer">
+            <span class="arrow-circle-btn">↗</span>
+          </div>
+        </div>
+
+        <!-- 04: Sign & Start (Dark Card Accent) -->
+        <div class="step-card dark">
+          <div class="step-card-num" style="color:#FFFFFF;">04</div>
+          <div class="step-card-content">
+            <h3 style="color:#FFFFFF;">Sign &amp; Start</h3>
+            <p style="color:var(--text-light-secondary);">Once agreed deliverables are signed off, engineering begins immediately.</p>
+          </div>
+          <div class="step-card-footer">
+            <span class="arrow-circle-btn light">↗</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONTACT & INQUIRIES
+       ======================================================== -->
   <section class="contact-section" id="contact">
-    <div class="contact-inner contact-inner-centered">
-      <div class="contact-content-center">
-        <p class="section-eyebrow light-eyebrow">• Let's Connect</p>
-        <h2 class="contact-title">Ready to build your<br>next product?</h2>
-        <p class="contact-sub">Whether you need an MVP, full-stack software, or a high-converting web platform — we're here to help you ship fast.</p>
+    <div class="container">
+      <div class="section-top-bar">
+        <div class="top-bar-left">
+          <a href="#home" class="arrow-circle-btn">↗</a>
+          <span class="pill-badge">GET IN TOUCH</span>
+        </div>
+        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+      </div>
 
-        <div class="contact-cta-wrapper">
-          <a href="mailto:samradh1718@gmail.com" class="btn-primary contact-direct-btn">
-            Send us an Email <span class="btn-icon">↗</span>
-          </a>
+      <div class="contact-layout-grid">
+        <!-- Left: Direct Contact Information & Founders -->
+        <div class="contact-left-col">
+          <div>
+            <h2 class="section-title" style="margin-bottom:12px;">Let’s talk about your project</h2>
+            <p class="section-subhead">Let’s turn your idea into a working digital solution. Connect directly with our engineering team.</p>
+
+            <div class="contact-pill-list">
+              <!-- WHATSAPP -->
+              <a href="https://wa.me/917458910548?text=Hi%20Build%20With%20Us,%20I'd%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" class="contact-pill-item" title="Chat on WhatsApp">
+                <span class="c-label">💬 WHATSAPP</span>
+                <span class="c-value">+91 74589 10548</span>
+                <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+              </a>
+
+              <!-- PHONE -->
+              <a href="tel:+917458910548" class="contact-pill-item" title="Call directly">
+                <span class="c-label">📞 PHONE</span>
+                <span class="c-value">+91 74589 10548</span>
+                <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+              </a>
+
+              <!-- EMAIL -->
+              <a href="mailto:workbuildwithus@gmail.com?subject=Project%20Inquiry%20-%20Build%20With%20Us&body=Hi%20Build%20With%20Us,%0A%0AWe%20would%20like%20to%20discuss%20a%20project:%0A-%20Discipline%20(Web/Mobile/SaaS/Automation):%0A-%20Target%20Timeline:%0A-%20Brief%20Overview:%0A" class="contact-pill-item" title="Send Email">
+                <span class="c-label">✉️ EMAIL</span>
+                <span class="c-value">workbuildwithus@gmail.com</span>
+                <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+              </a>
+
+              <!-- WEBSITE -->
+              <a href="https://buildwithus.runs-on.dev" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+                <span class="c-label">🌐 WEBSITE</span>
+                <span class="c-value">buildwithus.runs-on.dev</span>
+                <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Founder Response Bento Card -->
+          <div class="direct-response-card">
+            <div class="d-response-header">
+              <span class="d-response-icon">⚡</span>
+              <h4>Direct Founder Response</h4>
+            </div>
+            <p>Skip the sales reps. You speak directly with senior engineers Samradh Dubey &amp; Prashanjeet Chakrabarty. Guaranteed reply within 24 hours.</p>
+          </div>
         </div>
 
-        <div class="contact-info-cards contact-info-grid">
-          <div class="cinfo-item">
-            <span class="cinfo-icon">⚡</span>
-            <div>
-              <h4>Fast Turnaround</h4>
-              <p>High-speed agile sprints to get your MVP to market in weeks, not months.</p>
-            </div>
+        <!-- Right: Book Consultation Bento Card (Black Card) -->
+        <div class="booking-bento-card">
+          <div class="booking-header">
+            <h3>Book a one-to-one<br>consultation</h3>
+            <p>We’ll discuss your requirements, recommend a suitable technical architecture, and map out sprint deliverables.</p>
           </div>
-          <div class="cinfo-item">
-            <span class="cinfo-icon">🤝</span>
-            <div>
-              <h4>Direct Founder Access</h4>
-              <p>Work directly with Samradh Dubey &amp; Prashanjeet Chakrabarty. No middlemen.</p>
-            </div>
-          </div>
-          <div class="cinfo-item">
-            <span class="cinfo-icon">✉️</span>
-            <div>
-              <h4>Direct Email</h4>
-              <a href="mailto:samradh1718@gmail.com" class="contact-email-link">samradh1718@gmail.com ↗</a>
-            </div>
+
+          <div class="booking-action-list">
+            <a href="mailto:workbuildwithus@gmail.com?subject=Schedule%20a%20Strategy%20Call%20-%20Build%20With%20Us&body=Hi%20Samradh%20%26%20Prashanjeet,%0A%0AI'd%20like%20to%20schedule%20a%20one-to-one%20strategy%20call%20for%20our%20project.%0A%0ABest%20time%20to%20reach%20me:%20" class="btn-schedule-call">
+              <span>SCHEDULE VIA EMAIL</span>
+              <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+            </a>
+
+            <a href="https://wa.me/917458910548?text=Hi%20Build%20With%20Us,%20I'd%20like%20to%20schedule%20a%20consultation%20call%20for%20my%20project" target="_blank" rel="noopener noreferrer" class="btn-schedule-whatsapp">
+              <span>CHAT ON WHATSAPP</span>
+              <span class="arrow-circle-btn light" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a href="#home" class="footer-logo">
-        <div class="logo-mark">B</div>
-        <span>BuildWithUs</span>
-      </a>
-      <div class="footer-team">
-        <span>Samradh Dubey</span>
-        <span class="footer-sep">×</span>
-        <span>Prashanjeet Chakrabarty</span>
+  <!-- ========================================================
+       FOOTER & THANK YOU
+       ======================================================== -->
+  <footer class="thank-you-section">
+    <div class="container">
+      <div class="thank-you-inner">
+        <!-- Left Column -->
+        <div class="ty-left-col">
+          <div class="ty-badge">
+            <span class="pill-badge light">BUILD WITH US</span>
+          </div>
+
+          <h2 class="ty-headline">
+            Let’s build<br>together.
+          </h2>
+
+          <p class="ty-subhead">Let’s turn your idea into a working digital solution.</p>
+          <p class="ty-terms">Agreed sprint deliverables and timelines are documented in your project contract.</p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="ty-right-col">
+          <a href="#home" class="ty-giant-arrow" title="Back to Top">↗</a>
+
+          <div class="ty-contacts-list">
+            <a href="https://wa.me/917458910548?text=Hi%20Build%20With%20Us" target="_blank" rel="noopener noreferrer" class="ty-contact-link">
+              <span>+91 74589 10548</span>
+              <span>💬</span>
+            </a>
+            <a href="mailto:workbuildwithus@gmail.com" class="ty-contact-link">
+              <span>workbuildwithus@gmail.com</span>
+              <span>✉️</span>
+            </a>
+            <a href="https://buildwithus.runs-on.dev" target="_blank" rel="noopener noreferrer" class="ty-contact-link">
+              <span>buildwithus.runs-on.dev</span>
+              <span>🌐</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#contact">Contact</a>
+
+      <!-- Subfooter bar -->
+      <div class="ty-subfooter">
+        <div class="subfooter-brand">
+          <strong>Build With Us</strong> · Senior Engineering Studio (Samradh Dubey &amp; Prashanjeet Chakrabarty)
+        </div>
+        <div class="subfooter-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#works">Works</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>© 2026 Build With Us. All rights reserved.</div>
       </div>
-      <p class="footer-copy">© 2026 BuildWithUs. All rights reserved. Built for founders & startups.</p>
     </div>
   </footer>
 
+  <!-- ========================================================
+       PAGE LOGIC (Zero Backend Dependencies)
+       ======================================================== -->
   <script>
-    // Clock
-    function updateClock() {
-      const el = document.getElementById('current-time');
-      if (!el) return;
-      const now = new Date();
-      const t = now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
-      const d = now.toLocaleDateString([], { day: 'numeric', month: 'short' });
-      el.textContent = `${t} • ${d}`;
-    }
-    updateClock();
-    setInterval(updateClock, 1000);
-
-    // Active nav on scroll
-    const sections = document.querySelectorAll('section[id], nav[id]');
+    // --- NAVBAR ACTIVE SCROLL SYNC ---
+    const sections = document.querySelectorAll('section[id], header[id]');
     const navLinks = document.querySelectorAll('.nav-link');
+    const navBar = document.getElementById('topNav');
+
     window.addEventListener('scroll', () => {
-      let current = 'home';
-      const scrollY = window.pageYOffset + 150;
+      if (window.scrollY > 40) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+
+      let current = '';
+      const scrollY = window.pageYOffset + 200;
+
       sections.forEach(s => {
-        if (scrollY >= s.offsetTop) current = s.getAttribute('id');
+        const top = s.offsetTop;
+        const height = s.offsetHeight;
+        if (scrollY >= top && scrollY < top + height) {
+          current = s.getAttribute('id');
+        }
       });
-      navLinks.forEach(l => {
-        l.classList.remove('active');
-        if (l.getAttribute('href') === `#${current}`) l.classList.add('active');
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
       });
     });
 
-    // Form
-    function handleFormSubmit() {
-      const btn = document.getElementById('submitBtn');
-      const msg = document.getElementById('formSuccessMsg');
-      const form = document.getElementById('contactForm');
-      btn.textContent = 'Sending...';
-      btn.style.opacity = '0.7';
-      setTimeout(() => {
-        btn.innerHTML = 'Sent ✓';
-        btn.style.background = '#2e7d32';
-        btn.style.opacity = '1';
-        msg.style.display = 'block';
-        form.reset();
-        setTimeout(() => {
-          btn.innerHTML = 'Send Message <span class="btn-icon">→</span>';
-          btn.style.background = '';
-          msg.style.display = 'none';
-        }, 5000);
-      }, 700);
+    // --- MOBILE MENU TOGGLE ---
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (mobileBtn && navMenu) {
+      mobileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('mobile-open');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('mobile-open');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+          navMenu.classList.remove('mobile-open');
+        }
+      });
     }
   </script>
 </body>

@@ -36,7 +36,8 @@
 
       <div class="nav-actions">
         <a href="#contact" class="nav-contact-pill">
-          <span>Book a Strategy Call</span>
+          <span class="pill-text-desktop">Book a Strategy Call</span>
+          <span class="pill-text-mobile">Book Call</span>
           <span class="arrow-circle-btn light" style="width:24px;height:24px;font-size:0.8rem;">↗</span>
         </a>
         <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
@@ -130,7 +131,7 @@
           <a href="#about" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">STUDIO OVERVIEW</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">Engineered for startup velocity</h2>
@@ -185,7 +186,7 @@
           <a href="#services" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">ABOUT US</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">Ideas into reliable digital solutions</h2>
@@ -273,7 +274,7 @@
           <a href="#works" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">OUR SERVICES</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">Four ways we can help</h2>
@@ -566,7 +567,7 @@
           <a href="#standards" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">ENGINEERING PROCESS</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">Six steps, start to finish</h2>
@@ -658,7 +659,7 @@
           <a href="#contact" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">OUR COMMITMENT</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">What you can always expect</h2>
@@ -728,7 +729,7 @@
           <a href="#contact" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">NEXT STEPS</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <h2 class="section-title">How we get started</h2>
@@ -796,7 +797,7 @@
           <a href="#home" class="arrow-circle-btn">↗</a>
           <span class="pill-badge">GET IN TOUCH</span>
         </div>
-        <span class="section-locator">BUILD WITH US · buildwithus.runs-on.dev</span>
+        <span class="section-locator">BUILD WITH US</span>
       </div>
 
       <div class="contact-layout-grid">
@@ -828,12 +829,6 @@
                 <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
               </a>
 
-              <!-- WEBSITE -->
-              <a href="https://buildwithus.runs-on.dev" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
-                <span class="c-label">🌐 WEBSITE</span>
-                <span class="c-value">buildwithus.runs-on.dev</span>
-                <span class="arrow-circle-btn" style="width:28px;height:28px;font-size:0.85rem;">↗</span>
-              </a>
             </div>
           </div>
 
@@ -903,10 +898,6 @@
               <span>workbuildwithus@gmail.com</span>
               <span>✉️</span>
             </a>
-            <a href="https://buildwithus.runs-on.dev" target="_blank" rel="noopener noreferrer" class="ty-contact-link">
-              <span>buildwithus.runs-on.dev</span>
-              <span>🌐</span>
-            </a>
           </div>
         </div>
       </div>
@@ -972,17 +963,20 @@
       mobileBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         navMenu.classList.toggle('mobile-open');
+        mobileBtn.classList.toggle('active');
       });
 
       navLinks.forEach(link => {
         link.addEventListener('click', () => {
           navMenu.classList.remove('mobile-open');
+          mobileBtn.classList.remove('active');
         });
       });
 
       document.addEventListener('click', (e) => {
         if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
           navMenu.classList.remove('mobile-open');
+          mobileBtn.classList.remove('active');
         }
       });
     }
